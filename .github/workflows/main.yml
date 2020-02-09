@@ -14,10 +14,10 @@ jobs:
        npm i
        npm run build
     - name: Archive production artifacts
-        uses: actions/upload-artifact@v1
-        with:
-          name: build
-          path: build
+      uses: actions/upload-artifact@v1
+      with:
+        name: build
+        path: build
        
   deploy:
       needs: build

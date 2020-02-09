@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Setup mac for react web development
+          Setup mac for react web development. Now deployed with automated CI github actions
         </a>
       </header>
     </div>

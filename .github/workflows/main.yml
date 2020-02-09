@@ -20,10 +20,10 @@ jobs:
       runs-on: ubuntu-latest
 
       steps:
-        env: # Or as an environment variable
-          FIREBASE_DEPLOY_TOKEN: ${{ secrets.FIREBASE_DEPLOY_TOKEN }}
       - uses: actions/checkout@v2
       - name: Deploying app
+        env:
+          FIREBASE_DEPLOY_TOKEN: ${{ secrets.FIREBASE_DEPLOY_TOKEN }}
         run: |
          npm run deploy -- --token $FIREBASE_DEPLOY_TOKEN
        

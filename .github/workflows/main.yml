@@ -25,6 +25,7 @@ jobs:
         env:
           FIREBASE_DEPLOY_TOKEN: ${{ secrets.FIREBASE_DEPLOY_TOKEN }}
         run: |
+         npm i
          npm run deploy -- --token $FIREBASE_DEPLOY_TOKEN
        
    
